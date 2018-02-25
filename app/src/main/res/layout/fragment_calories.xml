@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffefefef"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_woodtexture">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:background="@drawable/page_lip_top"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/textView"
+            android:layout_marginTop="29dp"
+            android:textSize="50dp"
+            android:layout_marginLeft="31dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#ffff9e36"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Total calories consumed today"
+            android:id="@+id/textView2"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginTop="0dp"
+            android:textSize="8dp"
+            android:layout_below="@+id/textView" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add custom meal?"
+            android:id="@+id/button"
+            android:layout_alignTop="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_bg_orange"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffffff"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffefefef">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="  "
+            android:id="@+id/buttonSearch"
+            android:background="@drawable/find_button_search"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp" />
+
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:id="@+id/editText2"
+            android:background="#ffffffff"
+            android:inputType="textImeMultiLine"
+            android:imeActionLabel="Done"
+            android:imeOptions="actionDone"
+            android:lines="1"
+            android:hint="Search"
+            android:gravity="center_vertical"
+            android:layout_alignTop="@+id/buttonSearch"
+            android:textColor="#ff666666"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/buttonSearch"
+            android:paddingLeft="10dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Today"
+        android:id="@+id/textView6"
+        android:textSize="24dp"
+        android:textColor="#ffff9e36"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="20dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,203 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffefefef"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/background_woodtexture">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:background="@drawable/page_lip_top"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="invisible"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/hidden">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text=" 0"
+                    android:id="@+id/textView"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:textSize="45dp"
+                    android:paddingBottom="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffff9e36"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="CHOW Bucks collected"
+                    android:id="@+id/textView2"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignStart="@+id/textView"
+                    android:layout_alignEnd="@+id/textView"
+                    android:gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:textSize="8dp"
+                    android:layout_marginLeft="20dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPEND NOW"
+                    android:id="@+id/buttonSpend"
+                    android:background="@drawable/button_bg_orange"
+                    android:textColor="#ffffffff"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignStart="@+id/textView2"
+                    android:layout_marginRight="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#00ffffff"
+                android:paddingLeft="0dp"
+                android:paddingTop="0dp"
+                android:paddingRight="0dp"
+                android:paddingBottom="0dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageView2"
+                    android:background="@drawable/profile_demoimage_blank"
+                    android:focusableInTouchMode="false"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/mask"
+                    android:background="@drawable/profile_demoimage"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/imageView2" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffefefef"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/profile_subnav_background_active"
+                    android:id="@+id/relativeLayout3"
+                    android:layout_alignParentEnd="true">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imageView5"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/profile_icon_favourites_white"
+                        android:layout_marginLeft="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Favourites"
+                        android:id="@+id/textView7"
+                        android:textColor="#ffffffff"
+                        android:textSize="12dp"
+                        android:layout_toRightOf="@+id/textView666"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="0dp"
+                        android:paddingTop="5dp"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentBottom="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="0"
+                        android:id="@+id/textView666"
+                        android:textColor="#ffffffff"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/imageView5"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_alignParentTop="true" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:id="@+id/buttonEdit"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="20dp"
+                        android:text="EDIT PROFILE"
+                        android:singleLine="true"
+                        android:textColor="#ffffffff"
+                        android:background="#00ffffff"
+                        android:textSize="10dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <com.chow.chow.chow.utility.ExpandableHeightGridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="200dp"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="0dp"
+                android:stretchMode="columnWidth"
+                android:gravity="top"
+                android:isScrollContainer="false"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="0dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

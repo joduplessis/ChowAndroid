@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffefefef">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/background_woodtexture">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:background="@drawable/page_lip_top"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Collect your CHOW Bucks by entering the code on your slip."
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:padding="20dp"
+            android:textColor="#ff666666" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:hint="Enter code"
+            android:padding="14dp"
+            android:inputType="textImeMultiLine"
+            android:imeActionLabel="Done"
+            android:imeOptions="actionDone"
+            android:lines="1"
+            android:textColor="#ffa1a1a1"
+            android:layout_margin="10dp"
+            android:background="#ffffffff"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="By entering the code you accept our terms and conditions"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:gravity="center"
+            android:textSize="18dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REDEEM"
+            android:id="@+id/buttonCreate"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_bg_orange"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:textColor="#ffffffff" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/overlay_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/overlay_dark"
+        android:layout_gravity="right" >
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Points coming soon"
+            android:id="@+id/overlay_description"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffffff"
+            android:textSize="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+
+
+
+

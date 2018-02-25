@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CHOW</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_home">Home</string>
+    <string name="action_find">Find</string>
+    <string name="action_redeem">Redeem</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_shop">Shop</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="preference_file_key">profile_image</string>
+    <string name="app_id">688049841280839</string>
+
+</resources>

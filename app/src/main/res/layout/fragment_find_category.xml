@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffefefef"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/background_woodtexture">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:background="@drawable/page_lip_top"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+            <Button
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="SELECT ALL"
+                android:id="@+id/selectAll"
+                android:textColor="#ff7a6e65"
+                android:background="#00ffffff"
+                android:textSize="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Step 1: Select your category"
+                android:id="@+id/textHeading"
+                android:textColor="#ff666666"
+                android:textSize="30dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <com.chow.chow.chow.utility.ExpandableHeightGridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="125dp"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:isScrollContainer="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:id="@+id/buttonFilter"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_bg_orange"
+                android:layout_margin="10dp"
+                android:textSize="18dp"
+                android:textColor="#ffffffff"
+                android:layout_marginBottom="100dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

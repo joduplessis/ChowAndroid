@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="CHOW"
+            android:id="@+id/actionbarTitle"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="#ff609b3d"
+            android:textColor="#ffffffff"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logouticon"
+            android:text="LOGOUT"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="0dp"
+            android:textColor="#ffffffff"
+            android:textSize="10dp"
+            android:background="#00ffffff"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff2f2f2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/background_woodtexture"
+                android:id="@+id/relativeLayout2">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:background="@drawable/page_lip_top"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="You are almost there. Fill out the form with a few details and start collecting CHOW bucks to spend at one of our partner stores."
+                android:id="@+id/textView2"
+                android:layout_gravity="center_horizontal"
+                android:padding="14dp"
+                android:textColor="#ff7d7d7d"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentStart="true"
+                android:weightSum="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/username"
+                    android:hint="Username"
+                    android:inputType="textImeMultiLine"
+                    android:imeActionLabel="Done"
+                    android:imeOptions="actionDone"
+                    android:lines="1"
+                    android:padding="14dp"
+                    android:textColor="#ffa1a1a1"
+                    android:background="#ffffffff"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    android:hint="Email"
+                    android:inputType="textImeMultiLine"
+                    android:imeActionLabel="Done"
+                    android:imeOptions="actionDone"
+                    android:lines="1"
+                    android:padding="14dp"
+                    android:textColor="#ffa1a1a1"
+                    android:background="#ffffffff"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/password"
+                    android:hint="Password"
+                    android:padding="14dp"
+                    android:textColor="#ffa1a1a1"
+                    android:inputType="textImeMultiLine"
+                    android:imeActionLabel="Done"
+                    android:imeOptions="actionDone"
+                    android:password="true"
+                    android:lines="1"
+                    android:background="#ffffffff"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textImeMultiLine"
+                    android:imeActionLabel="Done"
+                    android:imeOptions="actionDone"
+                    android:lines="1"
+                    android:id="@+id/passwordconfirm"
+                    android:hint="Confirm Password"
+                    android:password="true"
+                    android:padding="14dp"
+                    android:textColor="#ffa1a1a1"
+                    android:background="#ffffffff"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CREATE ACCOUNT"
+                    android:id="@+id/buttonCreate"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_bg_orange"
+                    android:layout_margin="10dp"
+                    android:textColor="#ffffffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="By creating an account you agree to our terms and conditions."
+                    android:id="@+id/textView"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="#ff595959"
+                    android:textSize="10dp"
+                    android:padding="10dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/background_woodtexture"
+                    android:id="@+id/relativeLayout"
+                    android:layout_weight="2.59">
+
+                    <Button
+                        style="@style/AppTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Go back and log in"
+                        android:id="@+id/buttonLogin"
+                        android:drawableLeft="@drawable/icon_goback"
+                        android:padding="10dp"
+                        android:textColor="#ffb6a48c"
+                        android:background="#00ffffff"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffefefef">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/background_woodtexture">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:background="@drawable/page_lip_top"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Congratulations!"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="You've just earned"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="..."
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textSize="120dp"
+        android:textColor="#fff48d11"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CHOW Bucks"
+        android:id="@+id/textViewSub"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Visit our website to see a list of our partners where you can spend your CHOW Bucks. "
+        android:id="@+id/textView6"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Spend or share on your favourite social network"
+        android:id="@+id/tooltip"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:dividerPadding="5dp"
+        android:showDividers="middle">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:text="SPEND"
+            android:id="@+id/buttonSpend"
+            android:background="@drawable/button_bg_orange"
+            android:textSize="15dp"
+            android:textColor="#ffffffff"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:text="SHARE"
+            android:id="@+id/buttonShareFacebook"
+            android:background="@drawable/button_bg_orange"
+            android:src="@drawable/facebook"
+            android:textSize="15dp"
+            android:textColor="#ffffffff"
+            android:padding="10dp"
+            android:layout_marginLeft="00dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:text="SHARE"
+            android:id="@+id/buttonShareTwitter"
+            android:src="@drawable/twitter"
+            android:background="@drawable/button_bg_orange"
+            android:textSize="15dp"
+            android:textColor="#ffffffff"
+            android:padding="10dp"
+            android:layout_marginLeft="00dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+
+
+    </TableRow>
+
+</LinearLayout>
